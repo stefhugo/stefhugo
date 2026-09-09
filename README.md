@@ -1,6 +1,6 @@
 <img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/hero.png" alt="Stef Hugo - Recruiting talent. Building systems. Improving how business works." width="100%">
 
-[OutsideCapital](https://outsidecapital.co.za/) · [OutsideCapital Maps](https://www.outsidecapitalmaps.com/market-mapping/) · [LinkedIn](https://www.linkedin.com/in/stefanhugo) · [GitHub](https://github.com/stefhugo)
+[OutsideCapital](https://outsidecapital.co.za/) · [OutsideCapital Maps](https://www.outsidecapitalmaps.com) · [LinkedIn](https://www.linkedin.com/in/stefanhugo) · [GitHub](https://github.com/stefhugo)
 
 I am a **Senior Digital Recruitment Consultant at OutsideCapital**, specialising across software engineering, cloud, cybersecurity, data, digital, and product. My Industrial Engineering background still shapes how I work: make the process visible, remove friction, and keep improving the system around the work.
 
