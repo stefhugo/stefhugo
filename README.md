@@ -51,7 +51,7 @@ Internal reporting, communications, SharePoint enablement, workflow design, and 
 
 ## Featured project
 
-<a href="https://www.outsidecapitalmaps.com/demo">
+<a href="https://www.outsidecapitalmaps.com">
   <img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/market-map.png" alt="OutsideCapital Maps - an anonymised, decision-ready talent market intelligence experience" width="100%">
 </a>
 
