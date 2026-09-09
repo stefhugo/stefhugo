@@ -1,4 +1,4 @@
-![Stef Hugo - Recruiting talent. Building systems. Improving how business works.](./assets/hero.png)
+<img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/hero.png" alt="Stef Hugo - Recruiting talent. Building systems. Improving how business works." width="100%">
 
 [OutsideCapital](https://outsidecapital.co.za/) · [OutsideCapital Maps](https://www.outsidecapitalmaps.com/market-mapping/) · [LinkedIn](https://www.linkedin.com/in/stefanhugo) · [GitHub](https://github.com/stefhugo)
 
@@ -10,7 +10,7 @@ Alongside search and talent advisory, I design and operate intelligence products
 
 **Industrial Engineering → Research & Analytics → Technology Recruitment → Systems & Product Building**
 
-![Stef's journey from Industrial Engineering through research, technology recruitment, and systems building](./assets/journey.png)
+<img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/journey.png" alt="Stef's journey from Industrial Engineering through research, technology recruitment, and systems building" width="100%">
 
 ## What I focus on
 
@@ -51,7 +51,9 @@ Internal reporting, communications, SharePoint enablement, workflow design, and 
 
 ## Featured project
 
-[![OutsideCapital Maps - an anonymised, decision-ready talent market intelligence experience](./assets/market-map.png)](https://www.outsidecapitalmaps.com/demo)
+<a href="https://www.outsidecapitalmaps.com/demo">
+  <img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/market-map.png" alt="OutsideCapital Maps - an anonymised, decision-ready talent market intelligence experience" width="100%">
+</a>
 
 **OutsideCapital Maps** is a public, anonymised demonstration of how structured talent-market research can become a clear, decision-ready client experience.
 
@@ -75,7 +77,7 @@ I approach recruitment and operations as connected systems. First understand the
 
 ## Working across
 
-![A grouped overview of Stef's build, data, automation, integration, platform, and delivery tools](./assets/stack.png)
+<img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets/stack.png" alt="A grouped overview of Stef's build, data, automation, integration, platform, and delivery tools" width="100%">
 
 - **Build:** JavaScript, TypeScript, HTML, React, Streamlit, Google Apps Script, AppSheet
 - **Data & analysis:** Python, SQL, Excel, Power BI, Google Colab, Jupyter Notebooks

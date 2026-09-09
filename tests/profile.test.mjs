@@ -9,6 +9,7 @@ const assetNames = [...desktopAssetNames, ...mobileAssetNames];
 const assetUrls = assetNames.map((name) => new URL(`../assets/${name}`, import.meta.url));
 const publicImageNames = ["hero.png", "journey.png", "market-map.png", "stack.png"];
 const publicImageUrls = publicImageNames.map((name) => new URL(`../assets/${name}`, import.meta.url));
+const imageCdnBase = "https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@64b8c6e/assets";
 
 function readReadme() {
   return readFileSync(readmePath, "utf8");
@@ -45,7 +46,9 @@ test("profile exposes only the approved public destinations", () => {
 
   for (const url of approvedUrls) assert.ok(readme.includes(url), `missing ${url}`);
 
-  const remoteUrls = [...readme.matchAll(/https:\/\/[^\s)\]">]+/g)].map(([url]) => url);
+  const markdownLinks = [...readme.matchAll(/(?<!!)\[[^\]]+\]\((https:\/\/[^)]+)\)/g)].map((match) => match[1]);
+  const htmlLinks = [...readme.matchAll(/<a[^>]+href="(https:\/\/[^"]+)"/g)].map((match) => match[1]);
+  const remoteUrls = [...markdownLinks, ...htmlLinks];
   assert.deepEqual([...new Set(remoteUrls)].sort(), approvedUrls.sort());
 });
 
@@ -84,18 +87,18 @@ test("every public profile image is embedded with meaningful alt text", () => {
   const readme = readReadme();
   for (const asset of publicImageNames) {
     const escaped = asset.replace(".", "\\.");
-    const markdownImage = new RegExp(`!\\[[^\\]]{12,}\\]\\(\\./assets/${escaped}\\)`);
-    assert.ok(markdownImage.test(readme), `missing accessible embed: ${asset}`);
+    const htmlImage = new RegExp(`<img[^>]+src="${imageCdnBase}/${escaped}"[^>]+alt="[^"]{12,}"`);
+    assert.ok(htmlImage.test(readme), `missing accessible embed: ${asset}`);
   }
 });
 
-test("artwork uses repository-local PNGs through GitHub-compatible Markdown", () => {
+test("artwork uses pinned, non-clickable CDN delivery for repository-local PNGs", () => {
   const readme = readReadme();
-  assert.doesNotMatch(readme, /<picture>|<source\b|<img\b/i);
+  assert.doesNotMatch(readme, /<picture>|<source\b/i);
   for (const [index, asset] of publicImageNames.entries()) {
     assert.ok(existsSync(publicImageUrls[index]), `missing public image: ${asset}`);
     assert.ok(statSync(publicImageUrls[index]).size > 1000, `empty public image: ${asset}`);
     const escaped = asset.replace(".", "\\.");
-    assert.match(readme, new RegExp(`!\\[[^\\]]{12,}\\]\\(\\./assets/${escaped}\\)`));
+    assert.match(readme, new RegExp(`<img[^>]+src="${imageCdnBase}/${escaped}"`));
   }
 });
