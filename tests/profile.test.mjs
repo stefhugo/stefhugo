@@ -88,10 +88,11 @@ test("every SVG is embedded with meaningful alt text", () => {
   }
 });
 
-test("mobile artwork is selected at narrow viewport widths", () => {
+test("artwork uses GitHub's proxy-compatible Markdown image path", () => {
   const readme = readReadme();
-  for (const asset of mobileAssetNames) {
+  assert.doesNotMatch(readme, /<picture>|<source\b|<img\b/i);
+  for (const asset of desktopAssetNames) {
     const escaped = asset.replace(".", "\\.");
-    assert.match(readme, new RegExp(`<source media="\\(max-width: 640px\\)" srcset="\\./assets/${escaped}">`));
+    assert.match(readme, new RegExp(`!\\[[^\\]]{12,}\\]\\(\\./assets/${escaped}\\)`));
   }
 });

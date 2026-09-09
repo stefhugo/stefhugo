@@ -1,13 +1,6 @@
-<div align="center">
-
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero.svg" alt="Stef Hugo - Recruiting talent. Building systems. Improving how business works." width="100%">
-</picture>
+![Stef Hugo - Recruiting talent. Building systems. Improving how business works.](./assets/hero.svg)
 
 [OutsideCapital](https://outsidecapital.co.za/) · [OutsideCapital Maps](https://www.outsidecapitalmaps.com/market-mapping/) · [LinkedIn](https://www.linkedin.com/in/stefanhugo) · [GitHub](https://github.com/stefhugo)
-
-</div>
 
 I am a **Senior Digital Recruitment Consultant at OutsideCapital**, specialising across software engineering, cloud, cybersecurity, data, digital, and product. My Industrial Engineering background still shapes how I work: make the process visible, remove friction, and keep improving the system around the work.
 
@@ -15,10 +8,9 @@ Alongside search and talent advisory, I design and operate intelligence products
 
 ## My journey
 
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/journey-mobile.svg">
-  <img src="./assets/journey.svg" alt="Stef's journey from Industrial Engineering through research, technology recruitment, and systems building" width="100%">
-</picture>
+**Industrial Engineering → Research & Analytics → Technology Recruitment → Systems & Product Building**
+
+![Stef's journey from Industrial Engineering through research, technology recruitment, and systems building](./assets/journey.svg)
 
 ## What I focus on
 
@@ -59,12 +51,7 @@ Internal reporting, communications, SharePoint enablement, workflow design, and 
 
 ## Featured project
 
-<a href="https://www.outsidecapitalmaps.com/demo">
-  <picture>
-    <source media="(max-width: 640px)" srcset="./assets/market-map-mobile.svg">
-    <img src="./assets/market-map.svg" alt="OutsideCapital Maps - an anonymised, decision-ready talent market intelligence experience" width="100%">
-  </picture>
-</a>
+[![OutsideCapital Maps - an anonymised, decision-ready talent market intelligence experience](./assets/market-map.svg)](https://www.outsidecapitalmaps.com/demo)
 
 **OutsideCapital Maps** is a public, anonymised demonstration of how structured talent-market research can become a clear, decision-ready client experience.
 
@@ -88,10 +75,7 @@ I approach recruitment and operations as connected systems. First understand the
 
 ## Working across
 
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/stack-mobile.svg">
-  <img src="./assets/stack.svg" alt="A grouped overview of Stef's build, data, automation, integration, platform, and delivery tools" width="100%">
-</picture>
+![A grouped overview of Stef's build, data, automation, integration, platform, and delivery tools](./assets/stack.svg)
 
 - **Build:** JavaScript, TypeScript, HTML, React, Streamlit, Google Apps Script, AppSheet
 - **Data & analysis:** Python, SQL, Excel, Power BI, Google Colab, Jupyter Notebooks
