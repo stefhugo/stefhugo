@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Working across</title>
+  <desc id="desc">Tools grouped into build, data and analysis, automation and integrations, and platforms and delivery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07141b"/><stop offset="1" stop-color="#0d2028"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="440" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="438" rx="19" fill="none" stroke="#26414c"/>
+  <text x="44" y="52" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Working across</text>
+  <text x="1156" y="49" fill="#82969e" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" text-anchor="end">TOOLS IN SERVICE OF THE WORK</text>
+  <g fill="#0b1d25" stroke="#294752">
+    <rect x="42" y="78" width="548" height="140" rx="12"/><rect x="610" y="78" width="548" height="140" rx="12"/>
+    <rect x="42" y="238" width="548" height="160" rx="12"/><rect x="610" y="238" width="548" height="160" rx="12"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(70 105)">
+      <path d="m8 15-14 14L8 43M38 15l14 14-14 14M30 7 16 51" fill="none" stroke="#d98a5f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="78" y="24" fill="#f4f0e8" font-size="20" font-weight="700">BUILD</text>
+      <text x="78" y="58" fill="#c2cdd1" font-size="16">JavaScript · TypeScript · HTML · React</text>
+      <text x="78" y="85" fill="#9fb0b7" font-size="16">Streamlit · Google Apps Script · AppSheet</text>
+    </g>
+    <g transform="translate(638 105)">
+      <ellipse cx="23" cy="15" rx="25" ry="10" fill="none" stroke="#d98a5f" stroke-width="4"/>
+      <path d="M-2 15v36c0 6 11 10 25 10s25-4 25-10V15M-2 33c0 6 11 10 25 10s25-4 25-10" fill="none" stroke="#d98a5f" stroke-width="4"/>
+      <text x="78" y="24" fill="#f4f0e8" font-size="20" font-weight="700">DATA &amp; ANALYSIS</text>
+      <text x="78" y="58" fill="#c2cdd1" font-size="16">Python · SQL · Excel · Power BI</text>
+      <text x="78" y="85" fill="#9fb0b7" font-size="16">Google Colab · Jupyter Notebooks</text>
+    </g>
+    <g transform="translate(70 267)">
+      <path d="M5 4v22c0 12 8 20 18 20s18-8 18-20V4M-2 13h50M23 46v19" fill="none" stroke="#d98a5f" stroke-width="4" stroke-linecap="round"/>
+      <text x="78" y="24" fill="#f4f0e8" font-size="20" font-weight="700">AUTOMATION &amp; INTEGRATIONS</text>
+      <text x="78" y="58" fill="#c2cdd1" font-size="16">Make · PowerShell · Playwright</text>
+      <text x="78" y="85" fill="#9fb0b7" font-size="16">Apollo · Notion</text>
+    </g>
+    <g transform="translate(638 267)">
+      <path d="M4 47h42c11 0 18-7 18-17 0-9-6-16-15-17C45 4 37 0 27 0 13 0 2 10 1 24-7 26-12 33-12 40c0 4 2 7 4 9" fill="none" stroke="#d98a5f" stroke-width="4" stroke-linecap="round"/>
+      <text x="78" y="24" fill="#f4f0e8" font-size="20" font-weight="700">PLATFORMS &amp; DELIVERY</text>
+      <text x="78" y="58" fill="#c2cdd1" font-size="16">Docker · Cloudflare · Supabase · GitHub</text>
+      <text x="78" y="85" fill="#9fb0b7" font-size="16">Microsoft 365 / SharePoint · Google Sheets</text>
+    </g>
+  </g>
+</svg>

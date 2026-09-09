@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">OutsideCapital Maps</title>
+  <desc id="desc">A public, anonymised talent market intelligence demonstration.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08161d"/><stop offset="1" stop-color="#10252d"/></linearGradient></defs>
+  <rect width="720" height="720" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="718" height="718" rx="23" fill="none" stroke="#31505a"/>
+  <rect x="38" y="38" width="644" height="300" rx="15" fill="#071218" stroke="#294550"/>
+  <g fill="none" stroke="#31505a" stroke-width="2">
+    <path d="M78 262 145 163 222 194 287 92 379 133 446 70 533 142 620 106"/>
+    <path d="M109 90 190 139 251 112 333 190 416 155 482 249 603 207"/>
+    <path d="M76 301 192 235 294 284 386 218 500 276 637 213"/>
+  </g>
+  <g fill="#d98a5f">
+    <circle cx="78" cy="262" r="6"/><circle cx="145" cy="163" r="9"/><circle cx="222" cy="194" r="5"/><circle cx="287" cy="92" r="7"/><circle cx="379" cy="133" r="6"/><circle cx="446" cy="70" r="5"/><circle cx="533" cy="142" r="9"/><circle cx="620" cy="106" r="5"/><circle cx="109" cy="90" r="5"/><circle cx="190" cy="139" r="7"/><circle cx="251" cy="112" r="4"/><circle cx="333" cy="190" r="10"/><circle cx="416" cy="155" r="5"/><circle cx="482" cy="249" r="8"/><circle cx="603" cy="207" r="5"/><circle cx="76" cy="301" r="4"/><circle cx="192" cy="235" r="8"/><circle cx="294" cy="284" r="5"/><circle cx="386" cy="218" r="9"/><circle cx="500" cy="276" r="5"/><circle cx="637" cy="213" r="6"/>
+  </g>
+  <text x="42" y="391" fill="#d98a5f" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3">FEATURED PROJECT</text>
+  <text x="42" y="447" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700">OutsideCapital Maps</text>
+  <text x="42" y="493" fill="#b8c6cb" font-family="Arial, Helvetica, sans-serif" font-size="20">Structured market research, transformed into</text>
+  <text x="42" y="525" fill="#b8c6cb" font-family="Arial, Helvetica, sans-serif" font-size="20">a clear and decision-ready talent view.</text>
+  <rect x="42" y="570" width="216" height="55" rx="9" fill="#d98a5f"/>
+  <text x="150" y="605" fill="#08151c" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">VIEW LIVE DEMO  →</text>
+  <text x="42" y="668" fill="#82969e" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="1">PUBLIC · ANONYMISED · NO CLIENT OR CANDIDATE DATA</text>
+</svg>
+

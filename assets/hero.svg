@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Stef Hugo</title>
+  <desc id="desc">Recruiting talent. Building systems. Improving how business works.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07131a"/>
+      <stop offset="0.62" stop-color="#0b1a22"/>
+      <stop offset="1" stop-color="#101d23"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d98a5f"/>
+      <stop offset="1" stop-color="#a95f3d"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="#26414c"/>
+  <circle cx="1035" cy="102" r="92" fill="#d98a5f" opacity=".055" filter="url(#glow)"/>
+  <path d="M720 278 810 214 851 236 921 153 963 193 1009 129 1060 202 1090 179 1199 267V359H720Z" fill="#0e252e"/>
+  <path d="M720 278 810 214 851 236 921 153 963 193 1009 129 1060 202 1090 179 1199 267" fill="none" stroke="#37505a" stroke-width="2"/>
+  <path d="m921 153 16 35 26 5 46-64 20 55 31 18" fill="none" stroke="url(#copper)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M738 310c77-41 153-53 229-36 72 16 149 13 232-12" fill="none" stroke="#19343f" stroke-width="2"/>
+  <text x="64" y="98" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">Stef Hugo</text>
+  <rect x="64" y="122" width="58" height="4" rx="2" fill="#d98a5f"/>
+  <text x="64" y="177" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="32">Recruiting talent. Building systems.</text>
+  <text x="64" y="220" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="32">Improving how business works.</text>
+  <text x="66" y="272" fill="#b8c6cb" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="1.1">TECHNOLOGY RECRUITMENT · INTELLIGENCE · OPERATIONS</text>
+  <g fill="#d98a5f">
+    <circle cx="66" cy="309" r="4"/><circle cx="83" cy="309" r="4"/><circle cx="100" cy="309" r="4"/>
+  </g>
+  <text x="1010" y="306" fill="#c7d0d3" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="4">PEOPLE</text>
+  <text x="1010" y="327" fill="#c7d0d3" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="4">SYSTEMS</text>
+</svg>
+

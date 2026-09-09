@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">My journey</title>
+  <desc id="desc">Industrial Engineering to Research and Analytics to Technology Recruitment to Systems and Product Building.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08151c"/><stop offset="1" stop-color="#0d2028"/></linearGradient></defs>
+  <rect width="720" height="900" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="718" height="898" rx="23" fill="none" stroke="#294650"/>
+  <text x="42" y="65" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="700">Different experiences.</text>
+  <text x="42" y="103" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="700">One systems mindset.</text>
+  <path d="M89 160V789" stroke="#48606a" stroke-width="3"/>
+  <g fill="#0b1b23" stroke="#d98a5f" stroke-width="4">
+    <circle cx="89" cy="190" r="34"/><circle cx="89" cy="380" r="34"/><circle cx="89" cy="570" r="34"/><circle cx="89" cy="760" r="34"/>
+  </g>
+  <g fill="#d98a5f" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    <text x="89" y="198">01</text><text x="89" y="388">02</text><text x="89" y="578">03</text><text x="89" y="768">04</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(151 164)"><text fill="#f4f0e8" font-size="24" font-weight="700">Industrial Engineering</text><text y="39" fill="#aebdc2" font-size="18">Process thinking and continuous improvement.</text><text y="69" fill="#80969e" font-size="17">Make the work visible. Improve the system.</text></g>
+    <g transform="translate(151 354)"><text fill="#f4f0e8" font-size="24" font-weight="700">Research &amp; Analytics</text><text y="39" fill="#aebdc2" font-size="18">Turning information into structured insight.</text><text y="69" fill="#80969e" font-size="17">Understand the evidence before acting.</text></g>
+    <g transform="translate(151 544)"><text fill="#f4f0e8" font-size="24" font-weight="700">Technology Recruitment</text><text y="39" fill="#aebdc2" font-size="18">Connecting specialised talent and opportunity.</text><text y="69" fill="#80969e" font-size="17">People, markets, context, and judgement.</text></g>
+    <g transform="translate(151 734)"><text fill="#f4f0e8" font-size="24" font-weight="700">Systems &amp; Product Building</text><text y="39" fill="#aebdc2" font-size="18">Tools and workflows that help teams work better.</text><text y="69" fill="#80969e" font-size="17">Build only where the system can add value.</text></g>
+  </g>
+</svg>
+
