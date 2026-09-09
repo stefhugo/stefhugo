@@ -10,10 +10,7 @@ I am a **Senior Digital Recruitment Consultant at OutsideCapital**, specialising
 ## Featured project
 
 <a href="https://www.outsidecapitalmaps.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@6ad7888/assets/maps-dark.png">
-    <img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@6ad7888/assets/maps-light.png" alt="Anonymised talent market map: clustered nodes across cloud, engineering, data, and product, sized by talent density" width="100%">
-  </picture>
+  <img src="https://cdn.jsdelivr.net/gh/stefhugo/stefhugo@c172194/assets/market-mapping-launch.png" alt="OutsideCapital Talent Market Mapping — see the market clearly and plan the talent you need next" width="100%">
 </a>
 
 **OutsideCapital Maps** is a public, anonymised demonstration of how structured talent-market research becomes a clear, decision-ready client experience.
@@ -31,10 +28,9 @@ I am a **Senior Digital Recruitment Consultant at OutsideCapital**, specialising
 
 ## My journey
 
-```mermaid
-flowchart LR
-  A[Industrial Engineering] --> B[Research & Analytics] --> C[Technology Recruitment] --> D[Systems & Product Building]
-```
+<p align="center">
+  <strong>Industrial Engineering</strong> &nbsp;→&nbsp; <strong>Research &amp; Analytics</strong> &nbsp;→&nbsp; <strong>Technology Recruitment</strong> &nbsp;→&nbsp; <strong>Systems &amp; Product Building</strong>
+</p>
 
 ## How I work
 

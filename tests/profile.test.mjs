@@ -7,8 +7,8 @@ const readmePath = new URL("../README.md", import.meta.url);
 const assetsDirectory = new URL("../assets/", import.meta.url);
 const themedAssets = {
   hero: { dark: "hero-dark.png", light: "hero-light.png", width: 1760, height: 520 },
-  maps: { dark: "maps-dark.png", light: "maps-light.png", width: 1760, height: 600 },
 };
+const launchAsset = { name: "market-mapping-launch.png", width: 1080, height: 1080 };
 
 function readReadme() {
   return readFileSync(readmePath, "utf8");
@@ -21,7 +21,7 @@ function pngDimensions(url) {
   return { width: image.readUInt32BE(16), height: image.readUInt32BE(20) };
 }
 
-test("the four theme assets are real 2x PNG exports", () => {
+test("the theme hero assets are real 2x PNG exports", () => {
   for (const asset of Object.values(themedAssets)) {
     for (const variant of [asset.dark, asset.light]) {
       const url = new URL(variant, assetsDirectory);
@@ -32,7 +32,7 @@ test("the four theme assets are real 2x PNG exports", () => {
   }
 });
 
-test("README selects dark and light artwork from one immutable asset commit", () => {
+test("README selects dark and light hero artwork from one immutable asset commit", () => {
   const readme = readReadme();
   const pins = [];
 
@@ -47,7 +47,14 @@ test("README selects dark and light artwork from one immutable asset commit", ()
     pins.push(match[1]);
   }
 
-  assert.equal(new Set(pins).size, 1, "hero and maps assets must share one immutable commit");
+  assert.equal(new Set(pins).size, 1, "hero variants must share one immutable commit");
+});
+
+test("the official market-mapping launch artwork is published at its original dimensions", () => {
+  const url = new URL(launchAsset.name, assetsDirectory);
+  assert.ok(existsSync(url), `missing ${launchAsset.name}`);
+  assert.ok(statSync(url).size > 100_000, `${launchAsset.name} is unexpectedly small`);
+  assert.deepEqual(pngDimensions(url), { width: launchAsset.width, height: launchAsset.height });
 });
 
 test("the immutable asset pin is reachable and contains every published image", () => {
@@ -62,12 +69,21 @@ test("the immutable asset pin is reachable and contains every published image", 
   }
 });
 
-test("README renders the journey natively and keeps systems collapsed", () => {
+test("README displays the official launch artwork from an immutable asset commit", () => {
   const readme = readReadme();
-  assert.match(
-    readme,
-    /```mermaid\s+flowchart LR\s+A\[Industrial Engineering\] --> B\[Research & Analytics\] --> C\[Technology Recruitment\] --> D\[Systems & Product Building\]\s+```/m,
+  const match = readme.match(
+    /<img src="https:\/\/cdn\.jsdelivr\.net\/gh\/stefhugo\/stefhugo@([0-9a-f]{7,40})\/assets\/market-mapping-launch\.png" alt="[^"]{20,}" width="100%">/,
   );
+  assert.ok(match, "missing official market-mapping launch artwork");
+  execFileSync("git", ["merge-base", "--is-ancestor", match[1], "HEAD"], { stdio: "pipe" });
+  const image = execFileSync("git", ["show", `${match[1]}:assets/${launchAsset.name}`], { encoding: "buffer" });
+  assert.ok(image.length > 100_000, "pinned commit is missing the official launch artwork");
+});
+
+test("README renders the journey without GitHub Mermaid controls and keeps systems collapsed", () => {
+  const readme = readReadme();
+  assert.doesNotMatch(readme, /```mermaid/);
+  assert.match(readme, /Industrial Engineering.*Research &amp; Analytics.*Technology Recruitment.*Systems &amp; Product Building/s);
   assert.match(readme, /<details>\s*<summary><b>Selected systems<\/b><\/summary>/m);
 });
 
@@ -119,5 +135,5 @@ test("public files contain no direct contact details or private-system URLs", ()
 });
 
 test("superseded artwork is removed from the curated public asset set", () => {
-  assert.deepEqual(readdirSync(assetsDirectory).sort(), ["hero-dark.png", "hero-light.png", "maps-dark.png", "maps-light.png"]);
+  assert.deepEqual(readdirSync(assetsDirectory).sort(), ["hero-dark.png", "hero-light.png", "market-mapping-launch.png"]);
 });
